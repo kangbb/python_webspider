@@ -18,3 +18,11 @@ distributed_queue = DistributedQueue()
 bf = BloomFilter() # 搜索未抓取的链接
 
 initial_page = "www.renmingribao.com"
+while(True):
+	if request == 'GET': # 仅请求资源
+		if(distributed_queue.size()>0:
+			send(distributed_queue.get())
+		else:
+			break
+	elif request == 'POST': # 请求资源+用户数据(html中的body)
+		bf.put(request.url)
