@@ -1,0 +1,13 @@
+#Cookie
+
+#HTTP协议时无状态协议。
+#例如在一个网站某个网页登陆成功，访问其他网页仍然是未登陆状态。
+#故而需要记录这些会话信息，两种方式：
+#    通过Cookie保存
+#    通过Session保存
+#Cookie会将信息保存在客户端；
+#Session会将信息保存在服务器端，但是会给用户发送SessionID等信息，这些信息保存在客户端
+#不管哪种方式，总归会用到Cookie
+
+#python3 通过Cookiejar处理Cookie; python2 通过Cookielib处理
+
