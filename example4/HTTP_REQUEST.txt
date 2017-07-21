@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
+#http协议请求
+#GET请求：通过url网址传递信息；信息可以直接写在url上，也可由表单传递（最终会自动转化为url地址中的数据）
+#POST请求：向服务器提交数据/发送数据
+#PUT请求：请求服务器存储一个资源，需要指定存储的位置
+#HEAD请求：请求获取对应的HTTP报头信息
+#DELETE请求：请求服务器删除一个资源
+#OPTION请求：获得当前url所支持的请求类型
+#此外，还有TRACE请求、CONNECT请求
