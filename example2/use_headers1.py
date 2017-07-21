@@ -3,7 +3,9 @@
 
 #使得爬虫模拟成为浏览器--Headers属性
 #爬取一些无法爬取的网页
-#urlopener() 不支持一些HTTP的高级功能，不使用
+#使用 addheaders方法
+
+#urlopene()作为一种打开网页的方法，不支持一些HTTP的高级功能，不经常使用
 import urllib.request
 
 url = 'http://blog.csdn.net/kiloveyousmile/article/details/74318440'
