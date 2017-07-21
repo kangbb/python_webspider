@@ -9,9 +9,11 @@
 import urllib.request
 
 url = 'http://blog.csdn.net/kiloveyousmile/article/details/74318440'
+# 使用分行书写时，不能随意添加空格或tab
 headers = ('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) \
-	AppleWebKit/537.36 (KHTML, like Gecko) \
-	Chrome/58.0.3029.96 Safari/537.36')
+AppleWebKit/537.36 (KHTML, like Gecko) \
+Chrome/58.0.3029.96 Safari/537.36')
+
 opener = urllib.request.build_opener()
 opener.addheaders = [headers]
 data = opener.open(url).read() # 读取网站信息
