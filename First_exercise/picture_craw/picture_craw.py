@@ -14,7 +14,7 @@ def craw(url, page):
 	part1 = '<div id="plist".+?<div class="page clearfix">' #注意书写，完全正确时，字符串为灰色
 	# 实现全局匹配 返回所有匹配的结果
 	result1 = re.compile(part1).findall(html1)
-	# 由于每页该部分代码唯一，做如下操作：
+	# 把结果转换为字符串：
 	result1 = result1[0]
 	# 实现关于图片的正则表达式
 	part2 = '<img width="220" height="220" data-img="1" src="//(.+?\.jpg)">'
@@ -36,6 +36,6 @@ def craw(url, page):
 				x += 1
 		x += 1
 
-for i in range(1, 79):
+for i in range(1, 10):
 	url = "http://list.jd.com/list.html?cat=9987,653,655&page="+str(i)
 	craw(url, i)
