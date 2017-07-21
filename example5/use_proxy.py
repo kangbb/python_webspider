@@ -23,8 +23,6 @@ except Exception as e:
 	print('Error-->', str(e))
 finally:
 	print(len(data))
-	fhandle = open('D:\Kangbb\python_webspider\example5/1.html', 'wb')
+	fhandle = open('D:/Kangbb/python_webspider/example5/1.html', 'wb')
 	fhandle.write(data)
 	fhandle.close()
-
-	
