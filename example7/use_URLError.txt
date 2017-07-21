@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+#异常处理
+
+#主要使用两个 URLError类和其一个子类HTTPError
+
+#产生URLError的原因：
+#1）连接不上服务器
+#2）远程URL不存在
+#3）无网络
+#4）触发了HTTPError
+
+#导入模块：import rullib.error
+#使用：urllib.error.URLError    urllib.error.HTTPError
+
+#通常出现错误，则会返回状态码：
+#200 ok   一起正常
+#301 Moved Permanently 重定向到心得URL，永久性
+#302 Found 重定向到临时的URL，非永久性
+#304 Not Modified 请求的资源未更新
+#400 Bad Request 非法请求
+#401 Unauthorized 请求未授权
+#403 Forbidden 禁止访问
+#404 Not Found 没有找到对应页面
+#500 Internet Server Error 服务器内部出现错误
+#501 Not Implemented 服务器不支持实现请求所需要的功能
