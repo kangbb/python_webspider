@@ -25,12 +25,12 @@ opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cjar))
 urllib.request.install_opener(opener)
 file = opener.open(req)
 data = file.read() #登陆并爬取对应网页
-fhandle = open('D:\Kangbb\python_webspider\example8/1.html', 'wb')
+fhandle = open('D:/Kangbb/python_webspider/example8/1.html', 'wb')
 fhandle.write(data)
 fhandle.close()
 
 url2 = "http://bbs.chinaunix.net/"
 data2 = urllib.request.urlopen(url2).read() #爬取该站下的其他网页
-fhandle = open('D:\Kangbb\python_webspider\example8/2.html', 'wb')
+fhandle = open('D:/Kangbb/python_webspider/example8/2.html', 'wb')
 fhandle.write(data2)
 fhandle.close()
