@@ -8,7 +8,7 @@ file = urllib.request.urlopen('http://www.baidu.com')
 data = file.read()
 # print(data)
 
-fhandle = open('D:\Kangbb\python_webspider\example1/1.html', 'wb')
+fhandle = open('D:/Kangbb/python_webspider/example1/1.html', 'wb')
 fhandle.write(data)
 fhandle.close()
 
