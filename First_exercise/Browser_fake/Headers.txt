@@ -1,9 +1,10 @@
 #Headers头信息
+#以list[tuple, tuple,...]形式存储
 
 #字段基本格式
 #字段名:字段内容
 
-#Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8##
+#Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 #Accept字段主要用来表示浏览器能够支持哪些类型的内容
 #txet/html   HTML文档
 #application/xhtml+xml  XHTML文档
@@ -34,5 +35,6 @@
 #Host: www.youku.com
 #Host字段表示请求的服务器网址是什么。本例中为www.youku.com
 
-#Referer:网址
+#referer:网址
 #代表本网页来源于哪个网址
+#一般设置为要爬取的网页的域名地址或者网站的主页网址
