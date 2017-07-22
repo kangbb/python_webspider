@@ -1,0 +1,38 @@
+#Headers头信息
+
+#字段基本格式
+#字段名:字段内容
+
+#Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8##
+#Accept字段主要用来表示浏览器能够支持哪些类型的内容
+#txet/html   HTML文档
+#application/xhtml+xml  XHTML文档
+#application/xml   XML文档
+#q  权重系数，0~1之间
+
+#Accept-Encoding: gzip, deflate
+#Accept-Encoding字段主要用来表示浏览器支持的压缩编码
+#gzip 压缩编码的一种；deflate 无损数据压缩算法
+
+#Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+#支持的语言类型
+#zh-CN  中文简体, zh  中文
+#en-US  美式英语，en  英语
+
+#User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0
+#User-Agent表示用户代理。服务器可以识别出浏览器类型、浏览器版本、客户端的操作类型及版本号,网页排版引擎等客户端信息
+#Mozilla/5.0 浏览器名及浏览器版本
+#Windows NT 10.0; WOW64; rv:54.0 客户端此操作系统信息
+#Gecko  网页排版引擎
+#Firefox 火狐浏览器
+
+#Connection: keep-alive
+#Connection表示客户端和服务器连接类型
+#keep-alive 持久性连接
+#close 单方面关闭连接，让连接断开
+
+#Host: www.youku.com
+#Host字段表示请求的服务器网址是什么。本例中为www.youku.com
+
+#Referer:网址
+#代表本网页来源于哪个网址
