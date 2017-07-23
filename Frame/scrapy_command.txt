@@ -1,0 +1,24 @@
+# 全局命令
+#在任何地方可以运行
+#scrapy -h   //显示所有的全局命令
+#scrapy fetch <url> [--args]  //抓取url对应网页的内容
+#scrapy runspider [--args]  <filename>  //运行spider文件
+#scrapy settings --get [args]   //查看args的配置
+#scrapy shell -h  //显示创建终端可用参数
+#scrapy shell  //创建终端   在终端命令下，exit()退出
+#scrapy scrapy  <projectname>  //创建项目 filename也可以加上路径
+#scrapy version  //显示版本信息
+#scrapy version -v  //显示版本详细信息
+#scrapy view <url>  //下载url对应网页自动同时打开
+
+#项目命令
+#必须在项目内使用
+#scrapy bench  //测试本地硬件性能
+#scrapy genspider -l //显示当前可用爬虫模板
+#scrapy genspider -t <模板名> <爬虫名> <爬取的url> //创建爬虫文件 在spiders目录下
+#scrapy genspider -d <模板名>  //查看爬虫模板内容
+#scrapy check <filename>  //对文件进行合同(contract)进行检查
+#scrapy craw <filename>  //启动某个爬虫； 注意filename不带文件后缀
+#scrapy list  //列出爬虫文件
+#scrapy edit <filename>  //编辑爬虫文件(linux)
+#scrapy parse <url>  //获取指定url网址，并对对应的爬虫文件进行分析处理
