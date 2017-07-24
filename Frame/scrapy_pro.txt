@@ -20,4 +20,12 @@
 #1)禁止cookie
 #2)设置下载延迟
 #3)使用IP池
-#4)其他方法，比如分布式爬取等
+#4)使用用户代理池
+#5)其他方法，比如分布式爬取等
+-------
+#禁止Cookie 修改settings.py代码实现
+#  #COOKIES_ENABLED=False ---> COOKIES_ENABLED=False
+#设置下载延迟 修改settings.py代码实现
+#  #DOWNLOAD_DELAY = 3 ---> DOWNLOAD_DELAY = 3(下载网页间隔3秒)
+#使用IP池  在项目核心目录下建立中间件，文件名自定义; 配置settings.py内的DOWNLOADER_MIDDLEWARES代码
+#使用用户代理池，同上
