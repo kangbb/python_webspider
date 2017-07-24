@@ -18,7 +18,7 @@
 #scrapy genspider -t <模板名> <爬虫名> <爬取的url> //创建爬虫文件 在spiders目录下
 #scrapy genspider -d <模板名>  //查看爬虫模板内容
 #scrapy check <filename>  //对文件进行合同(contract)进行检查
-#scrapy craw <filename>  //启动某个爬虫； 注意filename不带文件后缀
+#scrapy crawl <filename>  //启动某个爬虫； 注意filename不带文件后缀
 #scrapy list  //列出爬虫文件
 #scrapy edit <filename>  //编辑爬虫文件(linux)
 #scrapy parse <url>  //获取指定url网址，并对对应的爬虫文件进行分析处理
