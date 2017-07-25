@@ -1,0 +1,9 @@
+rules = (
+        #自动爬取网页中符合条件的链接，以便进行下一次爬取
+        Rule(LinkExtractor(allow=('.*?/n.*?shtml',), allow_domains=('sohu.com',)), callback='parse_item', follow=False),
+    )
+
+#LinkExtractor()函数负责提取当前网页符合条件的网址，以便继续爬取
+#筛选条件由参数决定
+#参数均为tuple
+#最开始，从start_urls获得url,筛选出适合条件的网之后才交予parse_item()函数运行
