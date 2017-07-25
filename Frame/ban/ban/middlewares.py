@@ -29,7 +29,7 @@ class Ipmid(HttpProxyMiddleware):
         request.meta['proxy'] = 'http://'+thisip['ipaddr']
 
 class Uamid(UserAgentMiddleware):
-    def __init(self, ua=''):
+    def __init__(self, ua=''):
         self.ua = ua
     def process_request(self, request, spider):
         thisua = random.choice(UAPOOL)

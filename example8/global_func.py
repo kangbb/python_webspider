@@ -3,7 +3,7 @@
 
 import re
 
-string = 'hellomypythonhistorypthon123pythontm'
+string = '<hellomypythonhistorypthon1>23pythontm'
 pattern = re.compile('.python.') #预编译
 result = pattern.findall(string)
 print(result)
